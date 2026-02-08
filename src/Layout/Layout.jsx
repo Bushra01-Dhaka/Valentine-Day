@@ -1,4 +1,4 @@
-import { Outlet, ScrollRestoration } from "react-router";
+import { Link, Outlet, ScrollRestoration } from "react-router";
 
 const Layout = () => {
   return (
@@ -22,7 +22,9 @@ const Layout = () => {
       <div className="relative z-10">
         <Outlet />
       </div>
-
+      <div>
+        <p className="text-end text-xs px-4 bg-linear-to-br from-red-500 to-pink-500">Created by <Link to="https://bushra-portfolio.surge.sh/">Bushra</Link></p>
+      </div>
        <ScrollRestoration/>
     </div>
   );
